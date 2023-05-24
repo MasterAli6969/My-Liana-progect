@@ -22,8 +22,8 @@ export const ListItemStyle = styled.li`
 `;
 
 export const LinkStyle = styled.a`
-  text-transform: ${(props) => props.color || ""};
-  text-decoration: ${(props) => props.color || ""};
+  text-transform: ${(props) => props.textTransform || ""};
+  text-decoration: ${(props) => props.textDecoration || ""};
   color: ${(props) => props.color || ""};
   font-size: ${(props) => props.fontSize || ""};
   font-weight: ${(props) => props.fontWeight || ""};

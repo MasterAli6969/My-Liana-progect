@@ -1,30 +1,18 @@
-import React from "react";
-function CastomLinks() {
+import { ListStyle } from "./Style";
+import { ListItemStyle } from "./Style";
+import { LinkStyle } from "./Style";
+function CastomLinks(props) {
+  const { linkArray } = props;
   return (
-    <>
-    <h1
-      style={{
-        color: "white",
-        width: "150px",
-        height: "300px",
-        backgroundColor: "red",
-        margin: "50px 50px 50px 50px",
-      }}
-    >
-      TEXT1
-    </h1>
-    <h1
-      style={{
-        color: "white",
-        width: "150px",
-        height: "300px",
-        backgroundColor: "red",
-        margin: "50px 50px 50px 50px",
-      }}
-    >
-      TEXT2
-    </h1>
-    </>
+    <ListStyle {...props.ListStyle}>
+      {linkArray.map((linck, index) => (
+        <ListItemStyle {...props.ListItemStyle} key={index}>
+          <LinkStyle {...props.LinkStyle} href={linck.url}>
+            {linck.text}
+          </LinkStyle>
+        </ListItemStyle>
+      ))}
+    </ListStyle>
   );
 }
 

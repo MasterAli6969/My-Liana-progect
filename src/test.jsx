@@ -1,22 +1,37 @@
-import CastomDiv from "./Castom_Camponents/CastomDiv";
 import CastomLinks from "./Castom_Camponents/CastomLinks";
 function Test() {
-  const testAraay = [
+  const testarray = [
     {
-      id: "1",
-      left: <CastomLinks />,
-      right: <CastomLinks />,
+      url: "#",
+      text: "linck1",
+    },
+    {
+      url: "#",
+      text: "linck1",
+    },
+    {
+      url: "#",
+      text: "linck1",
     },
   ];
-  const DivStyleConteiner = {
+  const ListStyle = {
     display: "flex",
-    justifyContent: "space-between",
-    margin: "50 0 0 0",
+  };
+  const ListItemStyle = {
+    listStyleType: "none",
+  };
+  const LinkStyle = {
+    textTransform: "uppercase",
+    textDecoration: "none",
+    color: "white",
   };
   return (
-    <div>
-      <CastomDiv costArray={testAraay} DivStyleConteiner={DivStyleConteiner} />
-    </div>
+    <CastomLinks
+      linkArray={testarray}
+      ListStyle={ListStyle}
+      ListItemStyle={ListItemStyle}
+      LinkStyle={LinkStyle}
+    />
   );
 }
 

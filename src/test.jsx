@@ -1,7 +1,13 @@
 import CastomDiv from "./Castom_Camponents/CastomDiv";
-import CustomLinks from "./Castom_Camponents/CastomLinks";
+import CastomLinks from "./Castom_Camponents/CastomLinks";
 function Test() {
-  const testAraay = [<CustomLinks />, <CustomLinks />];
+  const testAraay = [
+    {
+      id: "1",
+      left: <CastomLinks />,
+      right: <CastomLinks />,
+    },
+  ];
   const DivStyleConteiner = {
     display: "flex",
     justifyContent: "space-between",

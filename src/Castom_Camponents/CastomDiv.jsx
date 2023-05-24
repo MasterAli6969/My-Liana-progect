@@ -1,12 +1,15 @@
 import { DivStyleConteiner } from "./Style";
 function CastomDiv(props) {
-  const {costArray} = props;
+  const { costArray } = props;
   return (
-    <DivStyleConteiner {...props.DivStyleConteiner}>
+    <>
       {costArray.map((component, index) => (
-        <div key={index}>{component}</div>
+        <DivStyleConteiner {...props.DivStyleConteiner}>
+          <div key={index}>{component.left}</div>
+          <div key={index}>{component.right}</div>
+        </DivStyleConteiner>
       ))}
-    </DivStyleConteiner>
+    </>
   );
 }
 export default CastomDiv;

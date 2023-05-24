@@ -1,38 +1,7 @@
-import CastomLinks from "./Castom_Camponents/CastomLinks";
+import CastomText from "./A1_Castom_Components/CastomText";
 function Test() {
-  const testarray = [
-    {
-      url: "#",
-      text: "linck1",
-    },
-    {
-      url: "#",
-      text: "linck1",
-    },
-    {
-      url: "#",
-      text: "linck1",
-    },
-  ];
-  const ListStyle = {
-    display: "flex",
-  };
-  const ListItemStyle = {
-    listStyleType: "none",
-  };
-  const LinkStyle = {
-    textTransform: "uppercase",
-    textDecoration: "none",
-    color: "white",
-  };
-  return (
-    <CastomLinks
-      linkArray={testarray}
-      ListStyle={ListStyle}
-      ListItemStyle={ListItemStyle}
-      LinkStyle={LinkStyle}
-    />
-  );
+  const testText = ["Text1", "Text2", "Text3", "Text4"];
+  return <CastomText textArray={testText} />;
 }
 
 export default Test;

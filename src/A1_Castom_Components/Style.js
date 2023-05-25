@@ -27,10 +27,21 @@ export const LinkStyle = styled.a`
   color: ${(props) => props.color || ""};
   font-size: ${(props) => props.fontSize || ""};
   font-weight: ${(props) => props.fontWeight || ""};
+  line-height: ${(props) => props.lineHeight || ""};
 `;
 export const TextStyle = styled.p`
+text-transform: ${(props) => props.textTransform || ""};
   color: ${(props) => props.color || ""};
   font-size: ${(props) => props.fontSize || ""};
   font-weight: ${(props) => props.fontWeight || ""};
+  margin: ${(props) => props.margin || ""};
   opacity: ${(props) => props.opacity || ""};
+`;
+
+export const ImgStyle = styled.img`
+  position: ${(props) => props.position || ""};
+  width: ${(props) => props.width || ""};
+  height: ${(props) => props.height || ""};
+  padding: ${(props) => props.padding || ""};
+  margin: ${(props) => props.margin || ""};
 `;

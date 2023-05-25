@@ -12,7 +12,7 @@ function HeaderNav() {
   const StyleDivConteiner = {
     display: "flex",
     justifyContent: "space-between",
-    margin: "20 0 0 0",
+    margin: "30px 0 0 0",
   };
 
   return (

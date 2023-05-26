@@ -1,10 +1,11 @@
+import React, { useState } from "react";
 import CastomLinks from "../../A1_Castom_Components/CastomLinks";
 function NavTestDesktop() {
   const linkArray = [
-    { id: "Linck1", url: "#", text: "Link 1" },
-    { id: "Linck2", url: "#", text: "Link 2" },
-    { id: "Linck3", url: "#", text: "Link 3" },
-    // Добавьте нужное количество ссылок в массив
+    { id: "home", url: "#", text: "home" },
+    { id: "portfolio", url: "#", text: "portfolio" },
+    { id: "blog", url: "#", text: "blog" },
+    { id: "pages", url: "#", text: "pages" },
   ];
 
   const StyleList = {
@@ -22,18 +23,14 @@ function NavTestDesktop() {
     fontWeight: "600",
   };
 
+
   return (
-    <>
-      <>
-        {/* Другой контент вашего приложения */}
-        <CastomLinks
-          linkArray={linkArray}
-          ListStyle={StyleList}
-          ListItemStyle={StyleListItem}
-          LinkStyle={StyleLink}
-        />
-      </>
-    </>
+    <CastomLinks
+      linkArray={linkArray}
+      ListStyle={StyleList}
+      ListItemStyle={StyleListItem}
+      LinkStyle={StyleLink}
+    />
   );
 }
 

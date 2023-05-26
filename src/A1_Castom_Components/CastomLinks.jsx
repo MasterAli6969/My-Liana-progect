@@ -4,7 +4,9 @@ import Submenu from "../Blocks/A1_HeaderNav/Submenu";
 function CastomLinks(props) {
   const { linkArray } = props;
 
-  const [isSubMenuOpen, setIsSubMenuOpen] = useState(Array(linkArray.length).fill(false));
+  const [isSubMenuOpen, setIsSubMenuOpen] = useState(
+    Array(linkArray.length).fill(false)
+  );
 
   const handleLinkMouseEnter = (index) => {
     const updatedSubMenuOpen = [...isSubMenuOpen];

@@ -1,13 +1,14 @@
+import { TextStyle, DivStyleConteiner } from "./Style";
 function CastomText(props) {
   const { textArray } = props;
   return (
-    <div >
+    <DivStyleConteiner {...props.DivStyleConteiner}>
       {textArray.map((text, index) => (
-        <p key={index}>
+        <TextStyle {...props.TextStyle} key={index}>
           {text}
-        </p>
+        </TextStyle>
       ))}
-    </div>
+    </DivStyleConteiner>
   );
 }
 

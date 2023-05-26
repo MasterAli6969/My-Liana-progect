@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const DivStyleConteiner = styled.div`
+  position: ${(props) => props.position || ""};
   display: ${(props) => props.display || ""};
   justify-content: ${(props) => props.justifyContent || ""};
   padding: ${(props) => props.padding || ""};
@@ -30,7 +31,7 @@ export const LinkStyle = styled.a`
   line-height: ${(props) => props.lineHeight || ""};
 `;
 export const TextStyle = styled.p`
-text-transform: ${(props) => props.textTransform || ""};
+  text-transform: ${(props) => props.textTransform || ""};
   color: ${(props) => props.color || ""};
   font-size: ${(props) => props.fontSize || ""};
   font-weight: ${(props) => props.fontWeight || ""};
@@ -40,6 +41,10 @@ text-transform: ${(props) => props.textTransform || ""};
 
 export const ImgStyle = styled.img`
   position: ${(props) => props.position || ""};
+  top: ${(props) => props.top || ""};
+  left: ${(props) => props.left || ""};
+  right: ${(props) => props.right || ""};
+  bottom: ${(props) => props.bottom || ""};
   width: ${(props) => props.width || ""};
   height: ${(props) => props.height || ""};
   padding: ${(props) => props.padding || ""};

@@ -1,10 +1,13 @@
 import HeaderNav from "./Blocks/A1_HeaderNav/HeaderNav";
-import Submenu from "./Blocks/A1_HeaderNav/Submenu";
+import Block0 from "./Blocks/Block0/Block0";
 function App() {
   return (
     <div>
       <div>
         <HeaderNav />
+      </div>
+      <div>
+        <Block0/>
       </div>
     </div>
   );

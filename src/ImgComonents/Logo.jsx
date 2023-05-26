@@ -23,7 +23,7 @@ function Logo() {
       <ImgStyle
         {...styleImg}
         src={process.env.PUBLIC_URL + "/image/logo.png"}
-      />{" "}
+      />
       <TextStyle {...styleText}>
         moonex <br /> labs
       </TextStyle>

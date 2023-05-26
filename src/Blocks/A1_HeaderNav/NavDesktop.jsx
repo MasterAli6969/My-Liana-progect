@@ -1,24 +1,11 @@
-import React, { useState } from "react";
-import {
-  ListStyle,
-  ListItemStyle,
-  LinkStyle,
-} from "../../A1_Castom_Components/Style";
-import Submenu from "./Submenu";
-function NavDesktop() {
-  const [isSubMenuOpen, setIsSubMenuOpen] = useState(Array(4).fill(false));
-
-  const handleLinkMouseEnter = (index) => {
-    const updatedSubMenuOpen = [...isSubMenuOpen];
-    updatedSubMenuOpen[index] = true;
-    setIsSubMenuOpen(updatedSubMenuOpen);
-  };
-
-  const handleLinkMouseLeave = (index) => {
-    const updatedSubMenuOpen = [...isSubMenuOpen];
-    updatedSubMenuOpen[index] = false;
-    setIsSubMenuOpen(updatedSubMenuOpen);
-  };
+import CastomLinks from "../../A1_Castom_Components/CastomLinks";
+function NavTestDesktop() {
+  const linkArray = [
+    { id: "Linck1", url: "#", text: "Link 1" },
+    { id: "Linck2", url: "#", text: "Link 2" },
+    { id: "Linck3", url: "#", text: "Link 3" },
+    // Добавьте нужное количество ссылок в массив
+  ];
 
   const StyleList = {
     display: "flex",
@@ -32,56 +19,22 @@ function NavDesktop() {
     textTransform: "uppercase",
     textDecoration: "none",
     color: "white",
-    fontWeight: "normal",
-    fontSize: "80%",
+    fontWeight: "600",
   };
 
   return (
     <>
-      <ListStyle {...StyleList}>
-        <ListItemStyle
-          {...StyleListItem}
-          onMouseEnter={()=>handleLinkMouseEnter(0)}
-          onMouseLeave={()=>handleLinkMouseLeave(0)}
-        >
-          <LinkStyle {...StyleLink} href="#">
-            Home
-          </LinkStyle>
-          {isSubMenuOpen[0] && <Submenu />}
-        </ListItemStyle>
-        <ListItemStyle
-          {...StyleListItem}
-          onMouseEnter={()=>handleLinkMouseEnter(1)}
-          onMouseLeave={()=>handleLinkMouseLeave(1)}
-        >
-          <LinkStyle {...StyleLink} href="#">
-            About
-          </LinkStyle>
-          {isSubMenuOpen[1] && <Submenu />}
-        </ListItemStyle>
-        <ListItemStyle
-          {...StyleListItem}
-          onMouseEnter={()=>handleLinkMouseEnter(2)}
-          onMouseLeave={()=>handleLinkMouseLeave(2)}
-        >
-          <LinkStyle {...StyleLink} href="#">
-            Contact
-          </LinkStyle>
-          {isSubMenuOpen[2] && <Submenu />}
-        </ListItemStyle>
-        <ListItemStyle
-          {...StyleListItem}
-          onMouseEnter={()=>handleLinkMouseEnter(3)}
-          onMouseLeave={()=>handleLinkMouseLeave(3)}
-        >
-          <LinkStyle {...StyleLink} href="#">
-            Contact
-          </LinkStyle>
-          {isSubMenuOpen[3] && <Submenu />}
-        </ListItemStyle>
-      </ListStyle>
+      <>
+        {/* Другой контент вашего приложения */}
+        <CastomLinks
+          linkArray={linkArray}
+          ListStyle={StyleList}
+          ListItemStyle={StyleListItem}
+          LinkStyle={StyleLink}
+        />
+      </>
     </>
   );
 }
 
-export default NavDesktop;
+export default NavTestDesktop;

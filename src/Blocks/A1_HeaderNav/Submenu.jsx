@@ -1,4 +1,4 @@
-import CastomLinks from "../../A1_Castom_Components/CastomLinks";
+import CastomList from "../../A1_Castom_Components/CastomList";
 function Submenu() {
   const NavDesktopArray = [
     {
@@ -38,7 +38,7 @@ function Submenu() {
     fontSize: "80%",
   };
   return (
-    <CastomLinks
+    <CastomList
       linkArray={NavDesktopArray}
       ListStyle={StyleList}
       ListItemStyle={StyleListItem}

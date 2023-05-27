@@ -6,6 +6,16 @@ export const DivStyleConteiner = styled.div`
   justify-content: ${(props) => props.justifyContent || ""};
   padding: ${(props) => props.padding || ""};
   margin: ${(props) => props.margin || ""};
+  flex-wrap: ${(props) => props.flexWrap || ""};
+  width: ${(props) => props.width || ""};
+  height: ${(props) => props.height || ""};
+  opacity: ${(props) => props.opacity || ""};
+  background-color: ${(props) => props.backgroundColor || ""};
+`;
+
+export const OrderDiv = styled.div`
+  order: ${(props) => props.order || ""};
+  background-color: ${(props) => props.backgroundColor || ""};
 `;
 
 export const ListStyle = styled.ul`
@@ -49,4 +59,12 @@ export const ImgStyle = styled.img`
   height: ${(props) => props.height || ""};
   padding: ${(props) => props.padding || ""};
   margin: ${(props) => props.margin || ""};
+`;
+
+export const LineStyle = styled.hr`
+  margin: ${(props) => props.margin || ""};
+  width: ${(props) => props.width || ""};
+  height: ${(props) => props.height || ""};
+  opacity: ${(props) => props.opacity || ""};
+  background-color: ${(props) => props.backgroundColor || ""};
 `;

@@ -28,7 +28,7 @@ function Block0() {
     height: "1px",
     width: "98%",
     backgroundColor: "white",
-    margin: "80px 0 0 0 ",
+    margin: "10% 0 0 0 ",
     opacity: "0.7"
   };
 

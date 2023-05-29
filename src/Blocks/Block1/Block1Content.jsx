@@ -13,7 +13,7 @@ export function NumberText() {
   const numberTextArray = ["1"];
   const StyleDivConteiner = {
     display: "block",
-    margin: "0 0 0 0",
+    margin: "0 0 0 20%",
   };
   const StyleText = {
     fontSize: "80px",

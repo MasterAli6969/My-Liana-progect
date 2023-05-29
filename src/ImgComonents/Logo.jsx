@@ -6,7 +6,6 @@ function Logo() {
     display: "flex",
     margin: "0 0 0 0",
   };
-
   const styleImg = {
     width: "60px",
     height: "60px",

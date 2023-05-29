@@ -1,0 +1,37 @@
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-dots li button:before {
+  width: 5px;
+  height: 5px;
+  border: solid 1px red;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  background-color: red;
+}
+
+.slick-dots {
+  bottom: -50px;
+}
+
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.img {
+  overflow-clip-margin: unset;
+}

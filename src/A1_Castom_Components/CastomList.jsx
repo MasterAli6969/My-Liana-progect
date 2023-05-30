@@ -10,6 +10,7 @@ function CastomList(props) {
             <LinkStyle {...props.LinkStyle} href={link.url} id={uniqueId}>
               {link.text}
             </LinkStyle>
+            {link.submenu && <div>{link.submenu}</div>}
           </ListItemStyle>
         );
       })}

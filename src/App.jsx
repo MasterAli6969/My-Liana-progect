@@ -4,6 +4,9 @@ import Block1 from "./Blocks/Block1/Block1";
 import Block2 from "./Blocks/Block2/Block2";
 import DeskSlider from "./Blocks/Slider/Slider";
 import Block3 from "./Blocks/Block3/Block3";
+import Block4 from "./Blocks/Block4/Block4";
+import Block5 from "./Blocks/Block5/Block5";
+import Footer from "./Blocks/Z1Footer/Footer";
 function App() {
   return (
     <div>
@@ -24,6 +27,15 @@ function App() {
       </>
       <>
         <Block3 />
+      </>
+      <>
+        <Block4 />
+      </>
+      <>
+        <Block5 />
+      </>
+      <>
+      <Footer/>
       </>
     </div>
   );

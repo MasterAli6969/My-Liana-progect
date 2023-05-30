@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const DivStyleConteiner = styled.div`
   position: ${(props) => props.position || ""};
+  top: ${(props) => props.top || ""};
+  left: ${(props) => props.left || ""};
+  right: ${(props) => props.right || ""};
   display: ${(props) => props.display || ""};
   justify-content: ${(props) => props.justifyContent || ""};
   padding: ${(props) => props.padding || ""};
@@ -11,6 +14,9 @@ export const DivStyleConteiner = styled.div`
   height: ${(props) => props.height || ""};
   opacity: ${(props) => props.opacity || ""};
   background-color: ${(props) => props.backgroundColor || ""};
+  background-image: ${(props) => props.backgroundImage || ""};
+  background-position: ${(props) => props.backgroundPosition || ""};
+  background-attachment: ${(props) => props.backgroundAttachment || ""};
 `;
 
 export const OrderDiv = styled.div`
@@ -39,6 +45,7 @@ export const LinkStyle = styled.a`
   font-size: ${(props) => props.fontSize || ""};
   font-weight: ${(props) => props.fontWeight || ""};
   line-height: ${(props) => props.lineHeight || ""};
+  cursor: ${(props) => props.cursor || ""};
 `;
 export const TextStyle = styled.p`
   text-transform: ${(props) => props.textTransform || ""};

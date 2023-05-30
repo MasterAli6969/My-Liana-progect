@@ -1,7 +1,7 @@
 import CastomDiv from "../../A1_Castom_Components/CastomDiv";
-import { NumberText, SmallText, MiddlleText, LastText } from "./Block1Content";
-export function Block1Left() {
-  const Block1LeftArray = [
+import { NumberText, SmallText, LastText } from "./Block4Content";
+export function Block4Left() {
+  const Block3LeftArray = [
     {
       id: "1",
       left: <NumberText />,
@@ -16,28 +16,26 @@ export function Block1Left() {
   };
   return (
     <CastomDiv
-      divArray={Block1LeftArray}
+      divArray={Block3LeftArray}
       DivStyleConteiner={StyleDivConteiner}
     />
   );
 }
 
-export function Block1Rihgt() {
-  const Block1RightArray = [
+export function Block4Rihgt() {
+  const Block3RightArray = [
     {
       id: "1",
-      left: <MiddlleText />,
       right: <LastText />,
     },
   ];
   const StyleDivConteiner = {
-    display: "flex",
+    display: "block",
     margin: "0 0 0 0",
-    justifyContent: "space-between",
   };
   return (
     <CastomDiv
-      divArray={Block1RightArray}
+      divArray={Block3RightArray}
       DivStyleConteiner={StyleDivConteiner}
     />
   );

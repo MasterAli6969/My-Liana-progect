@@ -1,5 +1,6 @@
 import CastomText from "../../A1_Castom_Components/CastomText";
 import Arrow from "../../ImgComonents/Arrow";
+import AnimatedWrapper from "../../A1_Castom_Components/AnimatedWrapper/AnimatedWrapper";
 export function BigText() {
   const textBigArray = ["Bigger,", "Bolder and", "Better"];
   const StyleDivConteiner = {
@@ -41,7 +42,9 @@ export function NormalText() {
         DivStyleConteiner={StyleDivConteiner}
         TextStyle={StyleText}
       />
-      <Arrow />
+      <AnimatedWrapper>
+        <Arrow />
+      </AnimatedWrapper>
     </>
   );
 }

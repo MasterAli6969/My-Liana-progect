@@ -4,6 +4,7 @@ import {
   TextStyle,
   ImgStyle,
 } from "../../A1_Castom_Components/Style";
+import AnimatedWrapper from "../../A1_Castom_Components/AnimatedWrapper/AnimatedWrapper";
 function Block5() {
   const [divBlock, setDivBlock] = useState(false);
   const styleDivConteiner = {
@@ -13,8 +14,8 @@ function Block5() {
     width: "100%",
     height: "600px",
     backgroundImage: `url(${process.env.PUBLIC_URL}/image/Group25.jpg)`,
-    backgroundPosition: "fixed",
-    backgroundAttachment: "center",
+    backgroundPosition: "center",
+    backgroundAttachment: "fixed",
   };
   const styleDivTextBlock = {
     position: "absolute",
@@ -35,14 +36,14 @@ function Block5() {
     margin: "0 0 15% 0",
   };
   const styleBigText = {
-    fontSize: "110px",
+    fontSize: divBlock ? "70px" : "110px",
     fontWeight: "600",
     lineHeight: "10px",
     margin: "0 0 15% 0",
   };
 
   const handleDivBlock = () => {
-    if (window.innerWidth <= 1050) {
+    if (window.innerWidth <= 1060) {
       setDivBlock(true);
     } else {
       setDivBlock(false);
@@ -62,10 +63,12 @@ function Block5() {
         <DivStyleConteiner style={styleDivTextBlock}>
           <TextStyle style={styleRedText}>Describe your project</TextStyle>
           <TextStyle style={styleBigText}>Call Liana Nsan</TextStyle>
-          <ImgStyle
-            src={process.env.PUBLIC_URL + "/image/Group 3 — copy.png"}
-            style={styleImg}
-          />
+          <AnimatedWrapper>
+            <ImgStyle
+              src={process.env.PUBLIC_URL + "/image/Group 3 — copy.png"}
+              style={styleImg}
+            />
+          </AnimatedWrapper>
         </DivStyleConteiner>
       </DivStyleConteiner>
     </>

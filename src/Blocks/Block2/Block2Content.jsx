@@ -50,7 +50,7 @@ export function LastText() {
   const StyleText = {
     fontSize: "50px",
     fontWeight: "normal",
-    margin: "0 50px 0 0",
+    margin: "0 50px 50px 0",
     opacity: "0.7",
   };
   return (

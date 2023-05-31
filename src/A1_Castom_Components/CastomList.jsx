@@ -1,4 +1,4 @@
-import { ListStyle, ListItemStyle, LinkStyle } from "./Style";
+import { ListStyle, ListItemStyle, LinkStyle, ImgStyle } from "./Style";
 function CastomList(props) {
   const { linkArray } = props;
   return (
@@ -8,6 +8,7 @@ function CastomList(props) {
         return (
           <ListItemStyle {...props.ListItemStyle} key={uniqueId}>
             <LinkStyle {...props.LinkStyle} href={link.url} id={uniqueId}>
+              <ImgStyle {...props.ImgStyle} src={link.image}/>
               {link.text}
             </LinkStyle>
             {link.submenu && <div>{link.submenu}</div>}

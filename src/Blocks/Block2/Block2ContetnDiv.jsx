@@ -33,7 +33,6 @@ export function Block2Rihgt() {
     display: "flex",
     margin: "0 0 0 0",
     justifyContent: "space-between",
-    // backgroundColor: "red",
   };
   return (
     <CastomDiv

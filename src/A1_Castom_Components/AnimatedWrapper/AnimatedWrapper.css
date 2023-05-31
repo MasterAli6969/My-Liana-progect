@@ -1,0 +1,12 @@
+.animated-wrapper {
+  opacity: 0;
+  transition: opacity 0.8s ease; /* Плавное переходное значение для анимации */
+}
+
+.animated-wrapper.visible {
+  opacity: 1;
+}
+
+.animated-wrapper.hidden {
+  opacity: 0;
+}

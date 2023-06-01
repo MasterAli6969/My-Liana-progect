@@ -12,13 +12,9 @@ import AnimatedWrapper from "./A1_Castom_Components/AnimatedWrapper/AnimatedWrap
 function App() {
   return (
     <div>
-      <>
-        <HeaderNav />
-      </>
+      <HeaderNav />
 
-      <>
-        <Block0 />
-      </>
+      <Block0 />
 
       <AnimatedWrapper>
         <Block1 />
@@ -28,9 +24,7 @@ function App() {
         <Block2 />
       </AnimatedWrapper>
 
-      <>
-        <DeskSlider />
-      </>
+      <DeskSlider />
 
       <AnimatedWrapper>
         <Block3 />
@@ -40,16 +34,11 @@ function App() {
         <Block4 />
       </AnimatedWrapper>
 
-      <>
-        <Block5 />
-      </>
+      <Block5 />
 
-      <>
-        <Footer />
-      </>
-      <>
-        <FooterDown />
-      </>
+      <Footer />
+
+      <FooterDown />
     </div>
   );
 }

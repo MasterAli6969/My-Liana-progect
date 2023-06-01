@@ -1,18 +1,19 @@
 import CastomDiv from "../../A1_Castom_Components/CastomDiv";
 import Logo from "../../ImgComonents/Logo";
-import NavDesktop from "./NavDesktop";
+import HearedNavDesktopMenu from "./HearedNavDesktopMenu";
 function HeaderNav() {
   const navDivArray = [
     {
       id: "1",
       left: <Logo />,
-      right: <NavDesktop />,
+      right: <HearedNavDesktopMenu />,
     },
   ];
   const StyleDivConteiner = {
     display: "flex",
+    width: "90%",
     justifyContent: "space-between",
-    margin: "30px 0 0 0",
+    margin: "30px 30px 0 0",
   };
 
   return (

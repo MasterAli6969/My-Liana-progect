@@ -26,6 +26,8 @@ export const OrderDiv = styled.div`
 
 export const ListStyle = styled.ul`
   display: ${(props) => props.display || ""};
+  width: ${(props) => props.width || ""};
+  height: ${(props) => props.height || ""};
   padding: ${(props) => props.padding || ""};
   margin: ${(props) => props.margin || ""};
   background-color: ${(props) => props.backgroundColor || ""};
@@ -45,6 +47,7 @@ export const LinkStyle = styled.a`
   font-size: ${(props) => props.fontSize || ""};
   font-weight: ${(props) => props.fontWeight || ""};
   line-height: ${(props) => props.lineHeight || ""};
+  margin: ${(props) => props.margin || ""};
   cursor: ${(props) => props.cursor || ""};
 `;
 export const TextStyle = styled.p`

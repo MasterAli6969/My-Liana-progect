@@ -6,7 +6,7 @@ function CastomList(props) {
       {linkArray.map((link, index) => {
         const uniqueId = `link-${index}`;
         return (
-          <ListItemStyle {...props.ListItemStyle} key={uniqueId}>
+          <ListItemStyle onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave} {...props.ListItemStyle} key={uniqueId}>
             <LinkStyle {...props.LinkStyle} href={link.url} id={uniqueId}>
               <ImgStyle {...props.ImgStyle} src={link.image}/>
               {link.text}

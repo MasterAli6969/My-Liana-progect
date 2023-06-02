@@ -4,14 +4,12 @@ function CastomList(props) {
   return (
     <ListStyle {...props.ListStyle}>
       {linkArray.map((link, index) => {
-        const uniqueId = `link-${index}`;
         return (
-          <ListItemStyle onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave} {...props.ListItemStyle} key={uniqueId}>
-            <LinkStyle {...props.LinkStyle} href={link.url} id={uniqueId}>
+          <ListItemStyle onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave} {...props.ListItemStyle} key={index}>
+            <LinkStyle {...props.LinkStyle} href={link.url}>
               <ImgStyle {...props.ImgStyle} src={link.image}/>
               {link.text}
             </LinkStyle>
-            {link.submenu && <div>{link.submenu}</div>}
           </ListItemStyle>
         );
       })}

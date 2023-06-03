@@ -1,6 +1,6 @@
-import { ImgStyle } from "../A1_Castom_Components/Style";
-import { TextStyle } from "../A1_Castom_Components/Style";
-import { DivStyleConteiner } from "../A1_Castom_Components/Style";
+import { ImgStyle } from "../../A1_Castom_Components/Style";
+import { TextStyle } from "../../A1_Castom_Components/Style";
+import { DivStyleConteiner } from "../../A1_Castom_Components/Style";
 function Logo() {
   const styleDivConteiner = {
     display: "flex",

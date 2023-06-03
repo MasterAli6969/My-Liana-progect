@@ -1,4 +1,4 @@
-import Logo from "../../ImgComonents/Logo";
+import Logo from "../A1_HeaderNav/Logo";
 import { FooterNav, MailTextBlock } from "./FooterContent";
 import { DivStyleConteiner } from "../../A1_Castom_Components/Style";
 function Footer() {

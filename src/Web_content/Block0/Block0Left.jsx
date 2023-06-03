@@ -1,6 +1,5 @@
 import CastomText from "../../A1_Castom_Components/CastomText";
-import Arrow from "../../ImgComonents/Arrow";
-import AnimatedWrapper from "../../A1_Castom_Components/AnimatedWrapper/AnimatedWrapper";
+import Arrow from "./Arrow";
 import "./Block0.css";
 export function BigText() {
   const textBigConteinerStyle = "textBigConteinerStyle";
@@ -28,9 +27,7 @@ export function NormalText() {
         castomTextConteinerStyle={textSmallConteinerStyle}
         castomTextStyle={textSmallStyle}
       />
-      <AnimatedWrapper>
-        <Arrow />
-      </AnimatedWrapper>
+      <Arrow />
     </>
   );
 }

@@ -1,0 +1,82 @@
+.divStyleConteiner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px 0 50px;
+  flex-wrap: wrap;
+}
+.divStyleSubConteinerLeft {
+}
+
+.divStyleSubConteinerRight {
+}
+
+.textBigConteinerStyle {
+  display: block;
+  margin: 10% 0 0 0;
+}
+
+.textBigStyle {
+  font-size: 100px;
+  font-weight: 600;
+  margin: 0 0 0 0;
+}
+
+.textSmallConteinerStyle {
+  display: block;
+  margin: 70px 0 80px 0;
+}
+
+.textSmallStyle {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0 0 0 0;
+}
+
+.block0RihgtConteiner {
+  position: relative;
+  display: block;
+  margin: 10% 0 0 0;
+}
+
+.block0BigImg {
+  width: 600px;
+  height: 700px;
+}
+
+.block0AImg {
+  position: absolute;
+  top: 320px;
+  left: -50px;
+  width: 100px;
+  height: 100px;
+}
+
+.block0ARotete {
+  position: absolute;
+  top: 200px;
+  left: -170px;
+  width: 350px;
+  height: 350px;
+  animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.block0Arrow {
+  width: 60px;
+  height: 60px;
+}
+
+.lineStyle {
+  height: 1px;
+  width: 99%;
+  background-color: white;
+  margin: 10% 0 0 0;
+}

@@ -1,4 +1,4 @@
-import CastomDiv from "../../A1_Castom_Components/CastomDiv";
+import CastomDiv from "../../../A1_Castom_Components/CastomDiv";
 import { NumberText, SmallText, LastText } from "./Block4Content";
 export function Block4Left() {
   const Block3LeftArray = [

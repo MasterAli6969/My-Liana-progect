@@ -1,4 +1,4 @@
-import CastomDiv from "../../A1_Castom_Components/CastomDiv";
+import CastomDiv from "../../../A1_Castom_Components/CastomDiv";
 import { Block2Left, Block2Rihgt } from "./Block2ContetnDiv";
 function Block2() {
   const Block1Array = [

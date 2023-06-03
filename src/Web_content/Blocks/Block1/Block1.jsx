@@ -1,6 +1,5 @@
-import CastomDiv from "../../A1_Castom_Components/CastomDiv";
+import CastomDiv from "../../../A1_Castom_Components/CastomDiv";
 import { Block1Left, Block1Rihgt } from "./Block1ContetnDiv";
-import CastomLine from "../../A1_Castom_Components/CastomLine";
 function Block1() {
   const Block1Array = [
     {
@@ -26,7 +25,6 @@ function Block1() {
   return (
     <>
       <CastomDiv divArray={Block1Array} DivStyleConteiner={StyleDivConteiner} />
-      <CastomLine LineStyle={LineBlock0} />
     </>
   );
 }

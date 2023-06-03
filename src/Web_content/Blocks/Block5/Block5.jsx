@@ -3,8 +3,7 @@ import {
   DivStyleConteiner,
   TextStyle,
   ImgStyle,
-} from "../../A1_Castom_Components/Style";
-import AnimatedWrapper from "../../A1_Castom_Components/AnimatedWrapper/AnimatedWrapper";
+} from "../../../A1_Castom_Components/Style";
 function Block5() {
   const [divBlock, setDivBlock] = useState(false);
   const styleDivConteiner = {
@@ -63,12 +62,11 @@ function Block5() {
         <DivStyleConteiner style={styleDivTextBlock}>
           <TextStyle style={styleRedText}>Describe your project</TextStyle>
           <TextStyle style={styleBigText}>Call Liana Nsan</TextStyle>
-          <AnimatedWrapper>
-            <ImgStyle
-              src={process.env.PUBLIC_URL + "/image/Group 3 — copy.png"}
-              style={styleImg}
-            />
-          </AnimatedWrapper>
+
+          <ImgStyle
+            src={process.env.PUBLIC_URL + "/image/Group 3 — copy.png"}
+            style={styleImg}
+          />
         </DivStyleConteiner>
       </DivStyleConteiner>
     </>

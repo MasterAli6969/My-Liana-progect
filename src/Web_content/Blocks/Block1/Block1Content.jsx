@@ -1,4 +1,4 @@
-import CastomText from "../../A1_Castom_Components/CastomText";
+import CastomText from "../../../A1_Castom_Components/CastomText";
 const StyleDivConteiner = {
   display: "block",
   margin: "0 0 0 0",

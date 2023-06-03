@@ -1,4 +1,4 @@
-import CastomText from "../../A1_Castom_Components/CastomText";
+import CastomText from "../../../A1_Castom_Components/CastomText";
 export function NumberText() {
   const numberTextArray = ["2"];
   const StyleDivConteiner = {

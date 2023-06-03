@@ -1,21 +1,8 @@
 import CastomList from "../../A1_Castom_Components/CastomList";
-const StyleListGlobal = {
-  display: "block",
-  width: "150px",
-  padding: "0 0 0 0",
-  margin: "0 0 0 0",
-};
-const StyleListItem = {
-  listStyleType: "none",
-  margin: "0 0 0 0",
-};
-const StyleLink = {
-  textDecoration: "none",
-  color: "red",
-  fontWeight: "normal",
-  fontSize: "80%",
-};
-export function HomeSubMenu(props) {
+const ulStyle = "subUl";
+const liStyle = ".sub_Li";
+const aStyle = "sub_a";
+export function HomeSubMenu() {
   const HomeSubMenuArray = [
     {
       url: "#",
@@ -53,9 +40,9 @@ export function HomeSubMenu(props) {
   return (
     <CastomList
       linkArray={HomeSubMenuArray}
-      ListStyle={StyleListGlobal}
-      ListItemStyle={StyleListItem}
-      LinkStyle={StyleLink}
+      castomUlStyle={ulStyle}
+      castomLiStyle={liStyle}
+      castomAStyle={aStyle}
     />
   );
 }
@@ -98,9 +85,9 @@ export function PortfolioSubMenu(props) {
   return (
     <CastomList
       linkArray={PortfolioSubMenuArray}
-      ListStyle={StyleListGlobal}
-      ListItemStyle={StyleListItem}
-      LinkStyle={StyleLink}
+      castomUlStyle={ulStyle}
+      castomLiStyle={liStyle}
+      castomAStyle={aStyle}
     />
   );
 }
@@ -142,9 +129,9 @@ export function BlogSubMenu(props) {
   return (
     <CastomList
       linkArray={BlogSubMenuArray}
-      ListStyle={StyleListGlobal}
-      ListItemStyle={StyleListItem}
-      LinkStyle={StyleLink}
+      castomUlStyle={ulStyle}
+      castomLiStyle={liStyle}
+      castomAStyle={aStyle}
     />
   );
 }
@@ -187,9 +174,9 @@ export function PagesSubMenu(props) {
   return (
     <CastomList
       linkArray={PagesSubMenuArray}
-      ListStyle={StyleListGlobal}
-      ListItemStyle={StyleListItem}
-      LinkStyle={StyleLink}
+      castomUlStyle={ulStyle}
+      castomLiStyle={liStyle}
+      castomAStyle={aStyle}
     />
   );
 }

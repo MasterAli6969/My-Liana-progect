@@ -1,16 +1,23 @@
-import { DivStyleConteiner } from "./Style";
-import { OrderDiv } from "./Style";
 function CastomDiv(props) {
-  const { divArray } = props;
+  const {
+    divArray,
+    casromDivStyleConteiner,
+    casromDivStyleSubConteinerLeft,
+    casromDivStyleSubConteinerRight,
+  } = props;
   return (
     <>
       {divArray.map((component) => (
-        <DivStyleConteiner {...props.DivStyleConteiner} key={component.id}>
+        <div className={`${casromDivStyleConteiner}`} key={component.id}>
           <>
-            <OrderDiv {...props.OrderLeft}>{component.left}</OrderDiv>
-            <OrderDiv {...props.OrderRight}>{component.right}</OrderDiv>
+            <div className={`${casromDivStyleSubConteinerLeft}`}>
+              {component.left}
+            </div>
+            <div className={`${casromDivStyleSubConteinerRight}`}>
+              {component.right}
+            </div>
           </>
-        </DivStyleConteiner>
+        </div>
       ))}
     </>
   );

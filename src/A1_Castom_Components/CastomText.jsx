@@ -1,15 +1,13 @@
-import { TextStyle, DivStyleConteiner } from "./Style";
 function CastomText(props) {
-  const { textArray } = props;
+  const { textArray, castomTextConteinerStyle, castomTextStyle, } = props;
   return (
-    <DivStyleConteiner {...props.DivStyleConteiner}>
+    <div className={`${castomTextConteinerStyle}`}>
       {textArray.map((text, index) => (
-        <TextStyle {...props.TextStyle} key={index}>
+        <p className={`${castomTextStyle}`} {...props.TextStyle} key={index}>
           {text}
-        </TextStyle>
+        </p>
       ))}
-    </DivStyleConteiner>
+    </div>
   );
 }
-
 export default CastomText;

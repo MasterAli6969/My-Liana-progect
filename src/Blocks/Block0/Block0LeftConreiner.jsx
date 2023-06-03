@@ -1,5 +1,6 @@
 import { BigText, NormalText } from "./Block0Left";
 import CastomDiv from "../../A1_Castom_Components/CastomDiv";
+import "./Block0.css";
 function Block0LeftConteiner() {
   const Block0LeftArray = [
     {
@@ -8,11 +9,7 @@ function Block0LeftConteiner() {
       right: <NormalText />,
     },
   ];
-  const StyleDivConteiner = {
-    display: "block",
-    margin: "10% 0 0 0",
-  };
-  return (
-    <CastomDiv divArray={Block0LeftArray} DivStyleConteiner={StyleDivConteiner} />
-  );
-} export default Block0LeftConteiner;
+
+  return <CastomDiv divArray={Block0LeftArray} />;
+}
+export default Block0LeftConteiner;

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function SetCastomLinck(props) {
-  const { linkArray, ulStyle, liStyle, aStyle } = props;
+  const { linkArray, castomUlStyle, castomLiStyle, castomAStyle } = props;
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleMouseEnter = (index) => {
@@ -13,18 +13,17 @@ function SetCastomLinck(props) {
   };
 
   return (
-    <ul className={`ulStyle ${ulStyle}`}>
+    <ul className={`${castomUlStyle}`}>
       {linkArray.map((link, index) => {
         const isLinkActive = activeIndex === index;
         return (
           <li
-            className={`liStyle ${liStyle}`}
+            className={` ${castomLiStyle}`}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
-            {...props.ListItemStyle}
             key={index}
           >
-            <a className={`aStyle ${aStyle}`} href={link.url}>
+            <a className={` ${castomAStyle}`} href={link.url}>
               {link.text}
             </a>
             {isLinkActive && link.submenu && <div>{link.submenu}</div>}

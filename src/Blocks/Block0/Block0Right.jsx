@@ -1,5 +1,6 @@
 import { ImgStyle, DivStyleConteiner } from "../../A1_Castom_Components/Style";
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
+import "./Block0.css";
 function Block0Right() {
   const StyleDivConteiner = {
     position: "relative",

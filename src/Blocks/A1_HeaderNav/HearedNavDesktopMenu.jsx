@@ -1,5 +1,5 @@
 import SetCastomLinck from "../../A1_Castom_Components/SetCastomLinck";
-import "./HeaderVavStyle.css"
+import "./HeaderNavStyle.css"
 import {
   HomeSubMenu,
   PortfolioSubMenu,
@@ -36,9 +36,9 @@ function HearedNavDesktopMenu() {
   return (
     <SetCastomLinck
       linkArray={linkArray}
-      ulStyle={ulStyle}
-      liStyle={liStyle}
-      aStyle={aStyle}
+      castomUlStyle={ulStyle}
+      castomLiStyle={liStyle}
+      castomAStyle={aStyle}
     />
   );
 }

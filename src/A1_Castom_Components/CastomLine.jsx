@@ -1,5 +1,5 @@
-import { LineStyle } from "./Style";
 function CastomLine(props) {
-    return <LineStyle {...props.LineStyle} />
+  const { castomLineStyle } = props;
+  return <hr className={`${castomLineStyle}`} />;
 }
 export default CastomLine;

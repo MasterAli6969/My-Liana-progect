@@ -2,7 +2,12 @@ import CastomDiv from "../../A1_Castom_Components/CastomDiv";
 import Block0LeftConteiner from "./Block0LeftConreiner";
 import Block0Right from "./Block0Right";
 import CastomLine from "../../A1_Castom_Components/CastomLine";
+import "./Block0.css";
 function Block0() {
+  const divStyleConteiner = "divStyleConteiner";
+  const divStyleSubConteinerLeft = "divStyleSubConteinerLeft";
+  const divStyleSubConteinerRight = "divStyleSubConteinerRight";
+  const lineStyle = "lineStyle";
   const Block0Array = [
     {
       id: "1",
@@ -10,37 +15,16 @@ function Block0() {
       right: <Block0Right />,
     },
   ];
-  const StyleDivConteiner = {
-    display: "flex",
-    justifyContent: "space-between",
-    margin: "0 50px 0 50px",
-    flexWrap: "wrap",
-  };
-
-  const LeftOrder = {
-    order: "2",
-  };
-  const RightOrder = {
-    order: "1",
-  };
-
-  const LineBlock0 = {
-    height: "1px",
-    width: "98%",
-    backgroundColor: "white",
-    margin: "10% 0 0 0 ",
-    opacity: "0.7"
-  };
 
   return (
     <>
       <CastomDiv
         divArray={Block0Array}
-        DivStyleConteiner={StyleDivConteiner}
-        OrderLeft={LeftOrder}
-        OrderRight={RightOrder}
+        casromDivStyleConteiner={divStyleConteiner}
+        casromDivStyleSubConteinerLeft={divStyleSubConteinerLeft}
+        casromDivStyleSubConteinerRight={divStyleSubConteinerRight}
       />
-      <CastomLine LineStyle= {LineBlock0}/>
+      <CastomLine castomLineStyle={lineStyle} />
     </>
   );
 }

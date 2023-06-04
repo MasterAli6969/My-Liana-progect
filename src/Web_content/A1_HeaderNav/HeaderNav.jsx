@@ -13,7 +13,7 @@ function HeaderNav() {
   ];
 
   return (
-    <CastomDiv divArray={navDivArray} casromDivStyleConteiner={divStyleConteiner} />
+    <CastomDiv divArray={navDivArray} castomDivStyleConteiner={divStyleConteiner} />
   );
 }
 export default HeaderNav;

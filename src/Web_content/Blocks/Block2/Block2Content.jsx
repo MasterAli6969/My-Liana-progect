@@ -1,63 +1,39 @@
 import CastomText from "../../../A1_Castom_Components/CastomText";
+import "../Blocks_Global_style.css";
+const castomTextConteinerStyle = "global_Text_Conteiner_Style";
+const castomTextStyleNumber = "global_Text_Style_Number";
+const castomTextStyleSmall = "global_Text_Style_Small";
+const castomTextStyleMiddle = "global_Text_Style_Middle";
+
 export function NumberText() {
   const numberTextArray = ["2"];
-  const StyleDivConteiner = {
-    display: "block",
-    margin: "0 0 0 20%",
-  };
-  const StyleText = {
-    fontSize: "80px",
-    fontWeight: "normal",
-    margin: "0 0 0 0",
-  };
   return (
     <CastomText
       textArray={numberTextArray}
-      DivStyleConteiner={StyleDivConteiner}
-      TextStyle={StyleText}
+      castomTextConteinerStyle={castomTextConteinerStyle}
+      castomTextStyle={castomTextStyleNumber}
     />
   );
 }
 
 export function SmallText() {
-  const smallTextArray = ["latest", "projects"];
-  const StyleDivConteiner = {
-    display: "block",
-    margin: "25px 0 0 0",
-  };
-  const StyleText = {
-    textTransform: "uppercase",
-    fontSize: "18px",
-    fontWeight: "normal",
-    margin: "0 0 0 250px",
-    opacity: "0.7",
-  };
+  const smallTextArray = ["latest", "propjects"];
   return (
     <CastomText
       textArray={smallTextArray}
-      DivStyleConteiner={StyleDivConteiner}
-      TextStyle={StyleText}
+      castomTextConteinerStyle={castomTextConteinerStyle}
+      castomTextStyle={castomTextStyleSmall}
     />
   );
 }
 
-export function LastText() {
-  const lastTextArray = ["All Project"];
-  const StyleDivConteiner = {
-    display: "block",
-    margin: "0 0 0 0",
-  };
-  const StyleText = {
-    fontSize: "50px",
-    fontWeight: "normal",
-    margin: "0 50px 50px 0",
-    opacity: "0.7",
-  };
+export function MiddlleText() {
+  const middlleTextArray = ["All Projects"];
   return (
     <CastomText
-      textArray={lastTextArray}
-      DivStyleConteiner={StyleDivConteiner}
-      TextStyle={StyleText}
+      textArray={middlleTextArray}
+      castomTextConteinerStyle={castomTextConteinerStyle}
+      castomTextStyle={castomTextStyleMiddle}
     />
   );
 }

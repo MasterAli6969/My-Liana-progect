@@ -1,6 +1,8 @@
 import CastomDiv from "../../../A1_Castom_Components/CastomDiv";
 import { Block1Left, Block1Rihgt } from "./Block1ContetnDiv";
+import "../Blocks_Global_style.css";
 function Block1() {
+  const castomDivStyleConteiner = "global_Div_Block_Style_Conteiner";
   const Block1Array = [
     {
       id: "1",
@@ -8,23 +10,13 @@ function Block1() {
       right: <Block1Rihgt />,
     },
   ];
-  const StyleDivConteiner = {
-    display: "flex",
-    justifyContent: "space-between",
-    width: "100%",
-    margin: "10% 0 0 0",
-    flexWrap: "wrap",
-  };
-  const LineBlock0 = {
-    height: "1px",
-    width: "98%",
-    backgroundColor: "white",
-    margin: "10% 0 0 0 ",
-    opacity: "0.7",
-  };
   return (
     <>
-      <CastomDiv divArray={Block1Array} DivStyleConteiner={StyleDivConteiner} />
+      <CastomDiv
+        divArray={Block1Array}
+        castomDivStyleConteiner={castomDivStyleConteiner}
+      />
+      <hr className="global_Line_Style" />
     </>
   );
 }

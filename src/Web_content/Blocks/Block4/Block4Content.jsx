@@ -1,95 +1,52 @@
 import CastomText from "../../../A1_Castom_Components/CastomText";
-const StyleDivConteiner = {
-  display: "block",
-  margin: "0 0 0 0",
-};
+import "../Blocks_Global_style.css";
+const castomTextConteinerStyle = "global_Text_Conteiner_Style";
+const castomTextStyleNumber = "global_Text_Style_Number";
+const castomTextStyleSmall = "global_Text_Style_Small";
+const castomTextStyleLong = "text_Style_Long";
+const castomTextStyleLongMini = "text_Style_Long_Mini";
+const castomTextStyleLongMicro = "text_Style_Long_Micro";
 
 export function NumberText() {
   const numberTextArray = ["4"];
-  const StyleDivConteiner = {
-    display: "block",
-    margin: "0 0 0 20%",
-  };
-  const StyleText = {
-    fontSize: "80px",
-    fontWeight: "normal",
-    margin: "0 0 0 0",
-  };
   return (
     <CastomText
       textArray={numberTextArray}
-      DivStyleConteiner={StyleDivConteiner}
-      TextStyle={StyleText}
+      castomTextConteinerStyle={castomTextConteinerStyle}
+      castomTextStyle={castomTextStyleNumber}
     />
   );
 }
 
 export function SmallText() {
   const smallTextArray = ["what", "clients say"];
-  const StyleDivConteiner = {
-    display: "block",
-    margin: "25px 0 0 0",
-  };
-  const StyleText = {
-    textTransform: "uppercase",
-    fontSize: "18px",
-    fontWeight: "normal",
-    margin: "0 0 0 250px",
-    opacity: "0.7",
-  };
   return (
     <CastomText
       textArray={smallTextArray}
-      DivStyleConteiner={StyleDivConteiner}
-      TextStyle={StyleText}
+      castomTextConteinerStyle={castomTextConteinerStyle}
+      castomTextStyle={castomTextStyleSmall}
     />
   );
 }
 
-export function LastText() {
-  const lastTextArray = [
+export function LongText() {
+  const longTextArray = [
     "Lianansan- a studio with",
     "passionate, propffessional & full",
     "creativity. Much more that what I`m",
     "expect. Really awesome & satisfied",
   ];
-  const StyleText = {
-    fontSize: "40px",
-    fontWeight: "normal",
-    margin: "0 0 0 0",
-  };
-
-  const lastMiniTextArray = ["Diogo Jota"];
-  const StyleTextMini = {
-    fontSize: "18px",
-    fontWeight: "normal",
-    margin: "10% 0 0 0",
-  };
-
-  const lastMicroTextArray = ["Lead Product at Google Inc"];
-  const StyleTextMicro = {
-    fontSize: "14",
-    opacity: "0.6",
-    margin: "3% 0 0 0",
-  };
+  const longMiniTextArray = ["Diogo Jota"];
+  const longMicroTextArray = ["Lead Product at Google Inc"];
 
   return (
     <>
       <CastomText
-        textArray={lastTextArray}
-        DivStyleConteiner={StyleDivConteiner}
-        TextStyle={StyleText}
+        textArray={longTextArray}
+        castomTextStyle={castomTextStyleLong}
       />
-      <CastomText
-        textArray={lastMiniTextArray}
-        DivStyleConteiner={StyleDivConteiner}
-        TextStyle={StyleTextMini}
-      />
-      <CastomText
-        textArray={lastMicroTextArray}
-        DivStyleConteiner={StyleDivConteiner}
-        TextStyle={StyleTextMicro}
-      />
+      <CastomText textArray={longMiniTextArray}  castomTextStyle ={castomTextStyleLongMini}/>
+      <CastomText textArray={longMicroTextArray} castomTextStyle ={castomTextStyleLongMicro} />
     </>
   );
 }

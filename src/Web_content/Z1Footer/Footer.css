@@ -1,0 +1,50 @@
+
+.footer_Conteiner {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 10% 0 0 2%;
+  flex-wrap: wrap;
+}
+
+/*все что ниже это косаемо контейнера для двух стобов ссылок*/
+.footer_Div_Linck_Conteiner {
+  display: flex;
+  margin: 0 40px 0 0;
+}
+
+.footer_Style_Ul_Conteiner {
+  display: block;
+  margin: 0 0 0 0;
+}
+
+.footer_Style_Li {
+  list-style-type: none;
+  margin: 0 0 25px 0;
+}
+
+.footer_Style_a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+/*все что ниже это косаемо контейнера для ПОЧТЫ И АДРЕСА*/
+
+.footer_Div_Mail_Text_Conteiner {
+  display: block;
+  margin: 0 0 0 0;
+}
+
+.footer_Style_Mail_Text {
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0 0 0 0;
+}
+
+.footer_Style_Adress_Text {
+  font-size: 20px;
+  opacity: 0.6;
+  margin: 3% 0 0 0;
+}

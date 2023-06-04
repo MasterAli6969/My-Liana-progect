@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { DivStyleConteiner } from "../../A1_Castom_Components/Style";
 import "./Slider.css";
-import CastomLine from "../../A1_Castom_Components/CastomLine";
 import {
   ImgSlides1,
   ImgSlides2,
@@ -36,14 +35,6 @@ function DeskSlider() {
     display: "block",
     width: "80%",
     margin: "0 auto",
-  };
-
-  const LineBlock0 = {
-    height: "1px",
-    width: "98%",
-    backgroundColor: "white",
-    margin: "10% 0 0 0 ",
-    opacity: "0.7",
   };
 
   const [slidesToShow, setSlidesToShow] = useState(3);
@@ -80,8 +71,8 @@ function DeskSlider() {
             <div key={slides.id}>{slides.slide}</div>
           ))}
         </Slider>
+        <hr className="global_Line_Style" />
       </DivStyleConteiner>
-      <CastomLine LineStyle={LineBlock0} />
     </>
   );
 }

@@ -1,19 +1,19 @@
 function CastomDiv(props) {
   const {
     divArray,
-    casromDivStyleConteiner,
-    casromDivStyleSubConteinerLeft,
-    casromDivStyleSubConteinerRight,
+    castomDivStyleConteiner,
+    castomDivStyleSubConteinerLeft,
+    castomDivStyleSubConteinerRight,
   } = props;
   return (
     <>
       {divArray.map((component) => (
-        <div className={`${casromDivStyleConteiner}`} key={component.id}>
+        <div className={`${castomDivStyleConteiner}`} key={component.id}>
           <>
-            <div className={`${casromDivStyleSubConteinerLeft}`}>
+            <div className={`${castomDivStyleSubConteinerLeft}`}>
               {component.left}
             </div>
-            <div className={`${casromDivStyleSubConteinerRight}`}>
+            <div className={`${castomDivStyleSubConteinerRight}`}>
               {component.right}
             </div>
           </>

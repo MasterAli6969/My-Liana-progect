@@ -1,52 +1,28 @@
 import CastomText from "../../../A1_Castom_Components/CastomText";
-const StyleDivConteiner = {
-  display: "block",
-  margin: "0 0 0 0",
-};
-const StyleText = {
-  fontSize: "50px",
-  fontWeight: "normal",
-  margin: "0 50px 0 0",
-  opacity: "0.7",
-};
+import "../Blocks_Global_style.css";
+const castomTextConteinerStyle = "global_Text_Conteiner_Style";
+const castomTextStyleNumber = "global_Text_Style_Number";
+const castomTextStyleSmall = "global_Text_Style_Small";
+const castomTextStyleMiddle = "global_Text_Style_Middle";
+
 export function NumberText() {
   const numberTextArray = ["1"];
-  const StyleDivConteiner = {
-    display: "block",
-    margin: "0 0 0 20%",
-  };
-  const StyleText = {
-    fontSize: "80px",
-    fontWeight: "normal",
-    margin: "0 0 0 0",
-  };
   return (
     <CastomText
       textArray={numberTextArray}
-      DivStyleConteiner={StyleDivConteiner}
-      TextStyle={StyleText}
+      castomTextConteinerStyle={castomTextConteinerStyle}
+      castomTextStyle={castomTextStyleNumber}
     />
   );
 }
 
 export function SmallText() {
   const smallTextArray = ["our", "services"];
-  const StyleDivConteiner = {
-    display: "block",
-    margin: "25px 0 0 0",
-  };
-  const StyleText = {
-    textTransform: "uppercase",
-    fontSize: "18px",
-    fontWeight: "normal",
-    margin: "0 0 0 250px",
-    opacity: "0.7",
-  };
   return (
     <CastomText
       textArray={smallTextArray}
-      DivStyleConteiner={StyleDivConteiner}
-      TextStyle={StyleText}
+      castomTextConteinerStyle={castomTextConteinerStyle}
+      castomTextStyle={castomTextStyleSmall}
     />
   );
 }
@@ -56,8 +32,8 @@ export function MiddlleText() {
   return (
     <CastomText
       textArray={middlleTextArray}
-      DivStyleConteiner={StyleDivConteiner}
-      TextStyle={StyleText}
+      castomTextConteinerStyle={castomTextConteinerStyle}
+      castomTextStyle={castomTextStyleMiddle}
     />
   );
 }
@@ -67,8 +43,8 @@ export function LastText() {
   return (
     <CastomText
       textArray={lastTextArray}
-      DivStyleConteiner={StyleDivConteiner}
-      TextStyle={StyleText}
+      castomTextConteinerStyle={castomTextConteinerStyle}
+      castomTextStyle={castomTextStyleMiddle}
     />
   );
 }

@@ -1,0 +1,28 @@
+
+/*все что ниже это для небольшого текста слева*/
+.footerDown_Style_Text_Conteiner {
+    display: block;
+    margin: 0 0 0 20px;
+}
+.footerDown_Style_Text {
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0 0 0 0;
+}
+
+/*все что ниже это для медиа ссылок/иконок*/
+
+.footerDown_Div_Style_Img_Link_Conteiner {
+    display: flex;
+    margin: 0 0 0 0;
+}
+
+.footerDown_Style_Img_Link_Conteiner {
+    list-style-type: none;
+    margin: 0 0 0 20px;
+}
+
+.footerDown_Style_Img_Link {
+    width: 30px;
+    height: 30px;
+}

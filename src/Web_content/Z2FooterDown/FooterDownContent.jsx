@@ -1,27 +1,25 @@
 import CastomText from "../../A1_Castom_Components/CastomText";
 import CastomList from "../../A1_Castom_Components/CastomList";
+import "./FooterDown.css";
 export function CopyrightText() {
-  const StyleTextConteiner = {
-    display: "block",
-    margin: "0 0 0 20px",
-  };
+  const castomTextConteinerStyle = "footerDown_Style_Text_Conteiner";
+  const castomTextStyle = "footerDown_Style_Text";
+
   const CopyrightTextArray = ["© id-themes. All Rights Reserved"];
-  const StyleText = {
-    fontSize: "15px",
-    fontWeight: "normal",
-    margin: "0 0 0 0",
-  };
 
   return (
     <CastomText
       textArray={CopyrightTextArray}
-      DivStyleConteiner={StyleTextConteiner}
-      TextStyle={StyleText}
+      castomTextConteinerStyle={castomTextConteinerStyle}
+      castomTextStyle={castomTextStyle}
     />
   );
 }
 
 export function IconLinksSocialWeb() {
+  const castomUlStyle = "footerDown_Div_Style_Img_Link_Conteiner";
+  const castomLiStyle = "footerDown_Style_Img_Link_Conteiner";
+  const castomImgStyle = "footerDown_Style_Img_Link";
   const IconLinksSocialWebArray = [
     {
       id: "0",
@@ -49,25 +47,12 @@ export function IconLinksSocialWeb() {
       image: process.env.PUBLIC_URL + "/image/Group 2.png",
     },
   ];
-
-  const StyleList = {
-    display: "flex",
-    margin: "0 0 0 0",
-  };
-  const StyleListItem = {
-    listStyleType: "none",
-    margin: "0 0 0 20px",
-  };
-  const StyleIconImg = {
-    width: "30px",
-    height: "30px",
-  };
   return (
     <CastomList
-      ImgStyle={StyleIconImg}
       linkArray={IconLinksSocialWebArray}
-      ListStyle={StyleList}
-      ListItemStyle={StyleListItem}
+      castomUlStyle={castomUlStyle}
+      castomLiStyle={castomLiStyle}
+      castomImgStyle={castomImgStyle}
     />
   );
 }

@@ -12,8 +12,9 @@ function HearedNavDesktopMenu() {
   const liStyle = "nav_Li";
   const aStyle = "nav_a";
   const ulSubStyle = "sub_Ul";
-  const liSubStyle = ".sub_Li";
+  const liSubStyle = "sub_Li";
   const aSubStyle = "sub_a";
+  const arrowActive = "arrowActive";
   const linkArray = [
     {
       url: "#",
@@ -66,6 +67,7 @@ function HearedNavDesktopMenu() {
       castomUlStyle={ulStyle}
       castomLiStyle={liStyle}
       castomAStyle={aStyle}
+      arrowActive={arrowActive}
     />
   );
 }

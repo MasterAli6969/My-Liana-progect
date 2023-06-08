@@ -22,6 +22,7 @@ function CastomBurgerLincks(props) {
     <ul className={`${castomUlStyle}`}>
       {linkArray.map((link, index) => {
         const isLinkActive = activeSubMenu === index;
+        const arrowActive = isLinkActive ? "arrowActive" : "";
         return (
           <li
             className={` ${castomLiStyle}`}
@@ -31,7 +32,7 @@ function CastomBurgerLincks(props) {
             <a className={` ${castomAStyle}`} href={link.url}>
               {link.text}
             </a>{" "}
-            <span className={` ${castomSpanStyle}`}></span>
+            <span className={` ${castomSpanStyle} ${arrowActive}`}></span>
             {isLinkActive && link.submenu && <div>{link.submenu}</div>}
           </li>
         );

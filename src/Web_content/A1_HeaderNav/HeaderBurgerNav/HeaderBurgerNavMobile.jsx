@@ -11,8 +11,8 @@ function HeaderBurgerNavMobile() {
   const liStyle = "nav_Burger_Li";
   const aStyle = "nav_Burger_a";
   const spanStyle = "nav_Burger_arrow";
-  const ulSubStyle = "sub_Ul";
-  const liSubStyle = ".sub_Li";
+  const ulSubStyle = "sub_Burger_Ul";
+  const liSubStyle = "sub_Burger_Li";
   const aSubStyle = "sub_Burger_a";
   const linkBurgerArray = [
     {

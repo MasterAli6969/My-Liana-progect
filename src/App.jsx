@@ -1,4 +1,4 @@
-import HeaderNav from "./Web_content/A1_HeaderNav/HeaderNav";
+import HeaderDesktopAndMobileBurgerMenu from "./Web_content/A1_HeaderNav/HeaderDesktopAndMobileBurgerMenu";
 import Block0 from "./Web_content/Block0/Block0";
 import Block1 from "./Web_content/Blocks/Block1/Block1";
 import Block2 from "./Web_content/Blocks/Block2/Block2";
@@ -11,7 +11,7 @@ import FooterDown from "./Web_content/Z2FooterDown/FooterDown";
 function App() {
   return (
     <>
-      <HeaderNav />
+      <HeaderDesktopAndMobileBurgerMenu />
 
       <Block0 />
 

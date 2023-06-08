@@ -23,7 +23,7 @@ function SetCastomLinck(props) {
             onMouseLeave={handleMouseLeave}
             key={index}
           >
-            <a className={` ${castomAStyle}`} href={link.url}>
+            <a className={` ${castomAStyle}`}  href={link.url}>
               {link.text}
             </a>
             {isLinkActive && link.submenu && <div>{link.submenu}</div>}

@@ -1,4 +1,4 @@
-import Logo from "../A1_HeaderNav/Logo";
+import Logo from "../A1_HeaderNav/HeaderNav/Logo";
 import { FooterNav, MailTextBlock } from "./FooterContent";
 import "./Footer.css";
 function Footer() {

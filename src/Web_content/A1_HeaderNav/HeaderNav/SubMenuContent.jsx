@@ -1,8 +1,7 @@
-import CastomList from "../../A1_Castom_Components/CastomList";
-const ulStyle = "subUl";
-const liStyle = ".sub_Li";
-const aStyle = "sub_a";
-export function HomeSubMenu() {
+import CastomList from "../../../A1_Castom_Components/CastomList";
+
+export function HomeSubMenu(props) {
+  const {ulSubStyle,liSubStyle,aSubStyle} = props
   const HomeSubMenuArray = [
     {
       url: "#",
@@ -40,14 +39,15 @@ export function HomeSubMenu() {
   return (
     <CastomList
       linkArray={HomeSubMenuArray}
-      castomUlStyle={ulStyle}
-      castomLiStyle={liStyle}
-      castomAStyle={aStyle}
+      castomUlStyle={ulSubStyle}
+      castomLiStyle={liSubStyle}
+      castomAStyle={aSubStyle}
     />
   );
 }
 
 export function PortfolioSubMenu(props) {
+  const {ulSubStyle,liSubStyle,aSubStyle} = props
   const PortfolioSubMenuArray = [
     {
       url: "#",
@@ -85,13 +85,14 @@ export function PortfolioSubMenu(props) {
   return (
     <CastomList
       linkArray={PortfolioSubMenuArray}
-      castomUlStyle={ulStyle}
-      castomLiStyle={liStyle}
-      castomAStyle={aStyle}
+      castomUlStyle={ulSubStyle}
+      castomLiStyle={liSubStyle}
+      castomAStyle={aSubStyle}
     />
   );
 }
 export function BlogSubMenu(props) {
+  const {ulSubStyle,liSubStyle,aSubStyle} = props
   const BlogSubMenuArray = [
     {
       url: "#",
@@ -129,14 +130,15 @@ export function BlogSubMenu(props) {
   return (
     <CastomList
       linkArray={BlogSubMenuArray}
-      castomUlStyle={ulStyle}
-      castomLiStyle={liStyle}
-      castomAStyle={aStyle}
+      castomUlStyle={ulSubStyle}
+      castomLiStyle={liSubStyle}
+      castomAStyle={aSubStyle}
     />
   );
 }
 
 export function PagesSubMenu(props) {
+  const {ulSubStyle,liSubStyle,aSubStyle} = props
   const PagesSubMenuArray = [
     {
       url: "#",
@@ -174,9 +176,9 @@ export function PagesSubMenu(props) {
   return (
     <CastomList
       linkArray={PagesSubMenuArray}
-      castomUlStyle={ulStyle}
-      castomLiStyle={liStyle}
-      castomAStyle={aStyle}
+      castomUlStyle={ulSubStyle}
+      castomLiStyle={liSubStyle}
+      castomAStyle={aSubStyle}
     />
   );
 }

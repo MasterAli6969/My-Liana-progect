@@ -1,8 +1,8 @@
-import CastomDiv from "../../A1_Castom_Components/CastomDiv";
+import CastomDiv from "../../../A1_Castom_Components/CastomDiv";
 import Logo from "./Logo";
 import HearedNavDesktopMenu from "./HearedNavDesktopMenu";
 import "./HeaderNavStyle.css";
-function HeaderNav() {
+function HeaderNavDesktop() {
   const divStyleConteiner = "navConteiner";
   const navDivArray = [
     {
@@ -11,9 +11,13 @@ function HeaderNav() {
       right: <HearedNavDesktopMenu />,
     },
   ];
-
   return (
-    <CastomDiv divArray={navDivArray} castomDivStyleConteiner={divStyleConteiner} />
+    <>
+      <CastomDiv
+        divArray={navDivArray}
+        castomDivStyleConteiner={divStyleConteiner}
+      />
+    </>
   );
 }
-export default HeaderNav;
+export default HeaderNavDesktop;

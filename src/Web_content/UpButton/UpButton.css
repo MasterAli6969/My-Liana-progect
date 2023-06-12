@@ -1,0 +1,19 @@
+.up_Button_conteiner {
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+.up_Button {
+    width: 60px;
+    height: 60px;
+    background-color: #fb4428;
+    border-radius: 50px;
+    transform: rotate(90deg);
+}
+
+.up_Button:hover {
+    width: 80px;
+    height: 80px;
+}

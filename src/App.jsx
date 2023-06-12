@@ -8,28 +8,38 @@ import Block4 from "./Web_content/Blocks/Block4/Block4";
 import Block5 from "./Web_content/Blocks/Block5/Block5";
 import Footer from "./Web_content/Z1Footer/Footer";
 import FooterDown from "./Web_content/Z2FooterDown/FooterDown";
+import AnimatedWrapper from "./A1_Castom_Components/AnimatedWrapper/AnimatedWrapper";
+import UpButton from "./Web_content/UpButton/UpButton";
 function App() {
   return (
     <>
       <HeaderDesktopAndMobileBurgerMenu />
-
       <Block0 />
 
-      <Block1 />
+      <AnimatedWrapper>
+        <Block1 />
+      </AnimatedWrapper>
 
-      <Block2 />
+      <AnimatedWrapper>
+        <Block2 />
+      </AnimatedWrapper>
 
       <DeskSlider />
 
-      <Block3 />
+      <AnimatedWrapper>
+        <Block3 />
+      </AnimatedWrapper>
 
-      <Block4 />
+      <AnimatedWrapper>
+        <Block4 />
+      </AnimatedWrapper>
 
       <Block5 />
 
       <Footer />
 
       <FooterDown />
+      <UpButton />
     </>
   );
 }

@@ -2,9 +2,13 @@ import CastomList from "../../A1_Castom_Components/CastomList";
 import CastomText from "../../A1_Castom_Components/CastomText";
 import "./Footer.css";
 export function FooterNav() {
-  const castomUlStyle = "footer_Style_Ul_Conteiner";
-  const castomLiStyle = "footer_Style_Li";
-  const castomAStyle = "footer_Style_a";
+  
+  const FooterNavStyleObj = {
+    castomUlStyle: "footer_Style_Ul_Conteiner",
+    castomLiStyle: "footer_Style_Li",
+    castomAStyle: "footer_Style_a",
+  };
+
   const NavFooterArrayLeft = [
     {
       id: "0",
@@ -48,15 +52,11 @@ export function FooterNav() {
     <div className="footer_Div_Linck_Conteiner">
       <CastomList
         linkArray={NavFooterArrayLeft}
-        castomUlStyle={castomUlStyle}
-        castomLiStyle={castomLiStyle}
-        castomAStyle={castomAStyle}
+        customClass={FooterNavStyleObj}
       />
       <CastomList
         linkArray={NavFooterArrayRight}
-        castomUlStyle={castomUlStyle}
-        castomLiStyle={castomLiStyle}
-        castomAStyle={castomAStyle}
+        customClass={FooterNavStyleObj}
       />
     </div>
   );

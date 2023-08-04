@@ -11,53 +11,34 @@ function HeaderBurgerNavMobile() {
   const liStyle = "nav_Burger_Li";
   const aStyle = "nav_Burger_a";
   const spanStyle = "nav_Burger_arrow";
-  const ulSubStyle = "sub_Burger_Ul";
-  const liSubStyle = "sub_Burger_Li";
-  const aSubStyle = "sub_Burger_a";
+
+  const HearedNavDesktopSubMenuStyleObj = {
+    castomUlStyle: "sub_Burger_Ul",
+    castomLiStyle: "ub_Burger_Li",
+    castomAStyle: "sub_Burger_a",
+  };
   const linkBurgerArray = [
     {
       url: "#",
       text: "home",
-      submenu: (
-        <HomeSubMenu
-          ulSubStyle={ulSubStyle}
-          liSubStyle={liSubStyle}
-          aSubStyle={aSubStyle}
-        />
-      ),
+      submenu: <HomeSubMenu customClass={HearedNavDesktopSubMenuStyleObj} />,
     },
     {
       url: "#",
       text: "Portfolio",
       submenu: (
-        <PortfolioSubMenu
-          ulSubStyle={ulSubStyle}
-          liSubStyle={liSubStyle}
-          aSubStyle={aSubStyle}
-        />
+        <PortfolioSubMenu customClass={HearedNavDesktopSubMenuStyleObj} />
       ),
     },
     {
       url: "#",
       text: "Blog",
-      submenu: (
-        <BlogSubMenu
-          ulSubStyle={ulSubStyle}
-          liSubStyle={liSubStyle}
-          aSubStyle={aSubStyle}
-        />
-      ),
+      submenu: <BlogSubMenu customClass={HearedNavDesktopSubMenuStyleObj} />,
     },
     {
       url: "#",
       text: "Pages",
-      submenu: (
-        <PagesSubMenu
-          ulSubStyle={ulSubStyle}
-          liSubStyle={liSubStyle}
-          aSubStyle={aSubStyle}
-        />
-      ),
+      submenu: <PagesSubMenu customClass={HearedNavDesktopSubMenuStyleObj} />,
     },
   ];
   return (

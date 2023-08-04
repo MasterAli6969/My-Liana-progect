@@ -1,7 +1,7 @@
 import CastomList from "../../../A1_Castom_Components/CastomList";
 
 export function HomeSubMenu(props) {
-  const {ulSubStyle,liSubStyle,aSubStyle} = props
+  const { customClass } = props;
   const HomeSubMenuArray = [
     {
       url: "#",
@@ -36,18 +36,11 @@ export function HomeSubMenu(props) {
       text: "Home Modern",
     },
   ];
-  return (
-    <CastomList
-      linkArray={HomeSubMenuArray}
-      castomUlStyle={ulSubStyle}
-      castomLiStyle={liSubStyle}
-      castomAStyle={aSubStyle}
-    />
-  );
+  return <CastomList linkArray={HomeSubMenuArray} customClass={customClass} />;
 }
 
 export function PortfolioSubMenu(props) {
-  const {ulSubStyle,liSubStyle,aSubStyle} = props
+  const { customClass } = props;
   const PortfolioSubMenuArray = [
     {
       url: "#",
@@ -83,16 +76,11 @@ export function PortfolioSubMenu(props) {
     },
   ];
   return (
-    <CastomList
-      linkArray={PortfolioSubMenuArray}
-      castomUlStyle={ulSubStyle}
-      castomLiStyle={liSubStyle}
-      castomAStyle={aSubStyle}
-    />
+    <CastomList linkArray={PortfolioSubMenuArray} customClass={customClass} />
   );
 }
 export function BlogSubMenu(props) {
-  const {ulSubStyle,liSubStyle,aSubStyle} = props
+  const { customClass } = props;
   const BlogSubMenuArray = [
     {
       url: "#",
@@ -127,18 +115,11 @@ export function BlogSubMenu(props) {
       text: "Blog Modern",
     },
   ];
-  return (
-    <CastomList
-      linkArray={BlogSubMenuArray}
-      castomUlStyle={ulSubStyle}
-      castomLiStyle={liSubStyle}
-      castomAStyle={aSubStyle}
-    />
-  );
+  return <CastomList linkArray={BlogSubMenuArray} customClass={customClass} />;
 }
 
 export function PagesSubMenu(props) {
-  const {ulSubStyle,liSubStyle,aSubStyle} = props
+  const { customClass } = props;
   const PagesSubMenuArray = [
     {
       url: "#",
@@ -173,12 +154,5 @@ export function PagesSubMenu(props) {
       text: "Pages Modern",
     },
   ];
-  return (
-    <CastomList
-      linkArray={PagesSubMenuArray}
-      castomUlStyle={ulSubStyle}
-      castomLiStyle={liSubStyle}
-      castomAStyle={aSubStyle}
-    />
-  );
+  return <CastomList linkArray={PagesSubMenuArray} customClass={customClass} />;
 }

@@ -8,66 +8,45 @@ import {
 } from "./SubMenuContent";
 
 function HearedNavDesktopMenu() {
-  const ulStyle = "navUl";
-  const liStyle = "nav_Li";
-  const aStyle = "nav_a";
-  const ulSubStyle = "sub_Ul";
-  const liSubStyle = "sub_Li";
-  const aSubStyle = "sub_a";
-  const arrowActive = "arrowActive";
+  const HearedNavDesktopSubMenuStyleObj = {
+    castomUlStyle: "sub_Ul",
+    castomLiStyle: "sub_Li",
+    castomAStyle: "sub_a",
+  };
+
+  const HearedNavDesktopMenuStyleObj = {
+    castomUlStyle: "navUl",
+    castomLiStyle: "nav_Li",
+    castomAStyle: "nav_a",
+  };
   const linkArray = [
     {
       url: "#",
       text: "home",
-      submenu: (
-        <HomeSubMenu
-          ulSubStyle={ulSubStyle}
-          liSubStyle={liSubStyle}
-          aSubStyle={aSubStyle}
-        />
-      ),
+      submenu: <HomeSubMenu customClass={HearedNavDesktopSubMenuStyleObj} />,
     },
     {
       url: "#",
       text: "Portfolio",
       submenu: (
-        <PortfolioSubMenu
-          ulSubStyle={ulSubStyle}
-          liSubStyle={liSubStyle}
-          aSubStyle={aSubStyle}
-        />
+        <PortfolioSubMenu customClass={HearedNavDesktopSubMenuStyleObj} />
       ),
     },
     {
       url: "#",
       text: "Blog",
-      submenu: (
-        <BlogSubMenu
-          ulSubStyle={ulSubStyle}
-          liSubStyle={liSubStyle}
-          aSubStyle={aSubStyle}
-        />
-      ),
+      submenu: <BlogSubMenu customClass={HearedNavDesktopSubMenuStyleObj} />,
     },
     {
       url: "#",
       text: "Pages",
-      submenu: (
-        <PagesSubMenu
-          ulSubStyle={ulSubStyle}
-          liSubStyle={liSubStyle}
-          aSubStyle={aSubStyle}
-        />
-      ),
+      submenu: <PagesSubMenu customClass={HearedNavDesktopSubMenuStyleObj} />,
     },
   ];
   return (
     <SetCastomLinck
       linkArray={linkArray}
-      castomUlStyle={ulStyle}
-      castomLiStyle={liStyle}
-      castomAStyle={aStyle}
-      arrowActive={arrowActive}
+      customClass={HearedNavDesktopMenuStyleObj}
     />
   );
 }

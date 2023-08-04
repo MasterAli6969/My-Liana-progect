@@ -40,7 +40,37 @@ function sameCase(a, b) {
     return -1;
   } else if (a.toUpperCase() == b.toUpperCase()) {
     return 1;
-  } else if (typeof a || typeof b != "string" || a.toUpperCase() != b.toUpperCase()) {
-    return 0
+  } else if (
+    typeof a ||
+    typeof b != "string" ||
+    a.toUpperCase() != b.toUpperCase()
+  ) {
+    return 0;
   }
+}
+
+function xor(a, b) {
+  if ((a === false && b === false) || (a === true && b === true)) {
+    return false;
+  } else if ((a === true && b === false) || (a === false && b === true)) {
+    return true;
+  } else {
+    return true;
+  }
+}
+
+function plural(n) {
+  return n === 1 ? false : true;
+}
+
+function getRealFloor(n) {
+  // if (n <= 0) {
+  //   return n;
+  // } else if (n <= 13) {
+  //   return n - 1;
+  // } else {
+  //   return n - 2;
+  // }
+
+  return n <= 0 ? n : n <= 13 ? n - 1 : n - 2;
 }

@@ -17,9 +17,11 @@ export function CopyrightText() {
 }
 
 export function IconLinksSocialWeb() {
-  const castomUlStyle = "footerDown_Div_Style_Img_Link_Conteiner";
-  const castomLiStyle = "footerDown_Style_Img_Link_Conteiner";
-  const castomImgStyle = "footerDown_Style_Img_Link";
+  const IconLinksSocialWebStyleObj = {
+    castomUlStyle: "footerDown_Div_Style_Img_Link_Conteiner",
+    castomLiStyle: "footerDown_Style_Img_Link_Conteiner",
+    castomImgStyle: "footerDown_Style_Img_Link",
+  };
   const IconLinksSocialWebArray = [
     {
       id: "0",
@@ -50,9 +52,7 @@ export function IconLinksSocialWeb() {
   return (
     <CastomList
       linkArray={IconLinksSocialWebArray}
-      castomUlStyle={castomUlStyle}
-      castomLiStyle={castomLiStyle}
-      castomImgStyle={castomImgStyle}
+      customClass={IconLinksSocialWebStyleObj}
     />
   );
 }

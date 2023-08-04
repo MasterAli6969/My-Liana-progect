@@ -1,18 +1,15 @@
 function CastomList(props) {
   const {
     linkArray,
-    castomUlStyle,
-    castomLiStyle,
-    castomAStyle,
-    castomImgStyle,
+    customClass,
   } = props;
   return (
-    <ul className={`${castomUlStyle}`}>
+    <ul className={`${customClass.castomUlStyle}`}>
       {linkArray.map((link, index) => {
         return (
-          <li className={` ${castomLiStyle}`} key={index}>
-            <a className={` ${castomAStyle}`} href={link.url}>
-              <img className={`${castomImgStyle}`} src={link.image} />
+          <li className={` ${customClass.castomLiStyle}`} key={index}>
+            <a className={` ${customClass.castomAStyle}`} href={link.url}>
+              <img className={`${customClass.castomImgStyle}`} src={link.image} />
               {link.text}
             </a>
           </li>

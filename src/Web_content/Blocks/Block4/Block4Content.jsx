@@ -22,9 +22,6 @@ export function SmallText() {
     <CastomText textArray={smallTextArray} customClass={smallTextStyleObj} />
   );
 }
-const castomTextStyleLong = "text_Style_Long";
-const castomTextStyleLongMini = "text_Style_Long_Mini";
-const castomTextStyleLongMicro = "text_Style_Long_Micro";
 
 export function LongText() {
   const longTextArray = [
@@ -36,25 +33,23 @@ export function LongText() {
   const longMiniTextArray = ["Diogo Jota"];
   const longMicroTextArray = ["Lead Product at Google Inc"];
 
-  
-  const smallTextStyleObj = {
-    castomTextConteinerStyle: "global_Text_Conteiner_Style",
-    castomTextStyle: "global_Text_Style_Small",
-  };
+  const castomTextStyleAddLong = "text_Style_Long";
+  const castomTextStyleAddMini = "text_Style_Long_Mini";
+  const castomTextStyleAddMicro = "text_Style_Long_Micro";
 
   return (
     <>
       <CastomText
         textArray={longTextArray}
-        castomTextStyle={castomTextStyleLong}
+        castomTextStyleAdd={castomTextStyleAddLong}
       />
       <CastomText
         textArray={longMiniTextArray}
-        castomTextStyle={castomTextStyleLongMini}
+        castomTextStyleAdd={castomTextStyleAddMini}
       />
       <CastomText
         textArray={longMicroTextArray}
-        castomTextStyle={castomTextStyleLongMicro}
+        castomTextStyleAdd={castomTextStyleAddMicro}
       />
     </>
   );

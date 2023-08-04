@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 
 function CastomBurgerLincks(props) {
-  const {
-    linkArray,
-    castomUlStyle,
-    castomLiStyle,
-    castomAStyle,
-    castomSpanStyle,
-  } = props;
+  const { linkArray, customClass } = props;
   const [activeSubMenu, setActiveSubMenu] = useState(null);
   const handleOnClick = (index) => {
     setActiveSubMenu((prevState) => {
@@ -19,20 +13,22 @@ function CastomBurgerLincks(props) {
     });
   };
   return (
-    <ul className={`${castomUlStyle}`}>
+    <ul className={`${customClass.castomUlStyle}`}>
       {linkArray.map((link, index) => {
         const isLinkActive = activeSubMenu === index;
         const arrowActive = isLinkActive ? "arrowActive" : "";
         return (
           <li
-            className={` ${castomLiStyle}`}
+            className={` ${customClass.castomLiStyle}`}
             onClick={() => handleOnClick(index)}
             key={index}
           >
-            <a className={` ${castomAStyle}`} href={link.url}>
+            <a className={` ${customClass.castomAStyle}`} href={link.url}>
               {link.text}
             </a>{" "}
-            <span className={` ${castomSpanStyle} ${arrowActive}`}></span>
+            <span
+              className={` ${customClass.castomSpanStyle} ${arrowActive}`}
+            ></span>
             {isLinkActive && link.submenu && <div>{link.submenu}</div>}
           </li>
         );

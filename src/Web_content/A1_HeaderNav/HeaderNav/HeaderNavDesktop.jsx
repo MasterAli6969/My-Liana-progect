@@ -3,7 +3,6 @@ import Logo from "./Logo";
 import HearedNavDesktopMenu from "./HearedNavDesktopMenu";
 import "./HeaderNavStyle.css";
 function HeaderNavDesktop() {
-  const divStyleConteiner = "navConteiner";
   const navDivArray = [
     {
       id: "1",
@@ -15,7 +14,7 @@ function HeaderNavDesktop() {
     <>
       <CastomDiv
         divArray={navDivArray}
-        castomDivStyleConteiner={divStyleConteiner}
+        castomDivStyleConteinerAdd="navConteiner"
       />
     </>
   );

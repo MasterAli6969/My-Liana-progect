@@ -1,7 +1,6 @@
 import CastomDiv from "../../../A1_Castom_Components/CastomDiv";
 import { NumberText, SmallText, LongText } from "./Block4Content";
 import "../Blocks_Global_style.css";
-const castomDivStyleConteiner = "global_Div_Block_Style_Sub_Conteiner";
 export function Block4Left() {
   const Block1LeftArray = [
     {
@@ -13,7 +12,7 @@ export function Block4Left() {
   return (
     <CastomDiv
       divArray={Block1LeftArray}
-      castomDivStyleConteiner={castomDivStyleConteiner}
+      castomDivStyleConteinerAdd="global_Div_Block_Style_Sub_Conteiner"
     />
   );
 }
@@ -28,7 +27,7 @@ export function Block4Rihgt() {
   return (
     <CastomDiv
       divArray={Block1RightArray}
-      castomDivStyleConteiner={castomDivStyleConteiner}
+      castomDivStyleConteinerAdd="global_Div_Block_Style_Sub_Conteiner"
     />
   );
 }

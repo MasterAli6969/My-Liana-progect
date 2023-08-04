@@ -3,9 +3,12 @@ import Block0LeftConteiner from "./Block0LeftConreiner";
 import Block0Right from "./Block0Right";
 import "./Block0.css";
 function Block0() {
-  const divStyleConteiner = "divStyleConteiner";
-  const divStyleSubConteinerLeft = "divStyleSubConteinerLeft";
-  const divStyleSubConteinerRight = "divStyleSubConteinerRight";
+  
+  const Block0StyleObj = {
+    castomDivStyleConteiner: "divStyleConteiner",
+    castomDivStyleSubConteinerLeft: "divStyleSubConteinerLeft",
+    castomDivStyleSubConteinerRight: "divStyleSubConteinerRight",
+  };
   const Block0Array = [
     {
       id: "1",
@@ -16,12 +19,7 @@ function Block0() {
 
   return (
     <>
-      <CastomDiv
-        divArray={Block0Array}
-        castomDivStyleConteiner={divStyleConteiner}
-        castomDivStyleSubConteinerLeft={divStyleSubConteinerLeft}
-        castomDivStyleSubConteinerRight={divStyleSubConteinerRight}
-      />
+      <CastomDiv divArray={Block0Array} customClass={Block0StyleObj} />
       <hr className="global_Line_Style" />
     </>
   );

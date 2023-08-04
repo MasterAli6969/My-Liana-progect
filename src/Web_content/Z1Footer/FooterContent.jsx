@@ -2,7 +2,6 @@ import CastomList from "../../A1_Castom_Components/CastomList";
 import CastomText from "../../A1_Castom_Components/CastomText";
 import "./Footer.css";
 export function FooterNav() {
-  
   const FooterNavStyleObj = {
     castomUlStyle: "footer_Style_Ul_Conteiner",
     castomLiStyle: "footer_Style_Li",
@@ -72,10 +71,10 @@ export function MailTextBlock() {
 
   return (
     <div className="footer_Div_Mail_Text_Conteiner">
-      <CastomText textArray={lastTextArray} castomTextStyle={castomMailStyle} />
+      <CastomText textArray={lastTextArray} castomTextStyleAdd={castomMailStyle} />
       <CastomText
         textArray={lastMicroTextArray}
-        castomTextStyle={castomAdressStyle}
+        castomTextStyleAdd={castomAdressStyle}
       />
     </div>
   );

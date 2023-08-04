@@ -7,10 +7,12 @@ import {
 } from "../HeaderNav/SubMenuContent";
 import "./HeaderBurgerNav.css";
 function HeaderBurgerNavMobile() {
-  const ulStyle = "nav_Burger_Ul";
-  const liStyle = "nav_Burger_Li";
-  const aStyle = "nav_Burger_a";
-  const spanStyle = "nav_Burger_arrow";
+  const HeaderBurgerNavMobileStyleObj = {
+    castomUlStyle: "nav_Burger_Ul",
+    castomLiStyle: "nav_Burger_Li",
+    castomAStyle: "nav_Burger_a",
+    castomSpanStyle: "nav_Burger_arrow",
+  };
 
   const HearedNavDesktopSubMenuStyleObj = {
     castomUlStyle: "sub_Burger_Ul",
@@ -44,10 +46,7 @@ function HeaderBurgerNavMobile() {
   return (
     <CastomBurgerLincks
       linkArray={linkBurgerArray}
-      castomUlStyle={ulStyle}
-      castomLiStyle={liStyle}
-      castomAStyle={aStyle}
-      castomSpanStyle={spanStyle}
+      customClass={HeaderBurgerNavMobileStyleObj}
     />
   );
 }

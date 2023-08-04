@@ -2,16 +2,18 @@ import CastomText from "../../A1_Castom_Components/CastomText";
 import CastomList from "../../A1_Castom_Components/CastomList";
 import "./FooterDown.css";
 export function CopyrightText() {
-  const castomTextConteinerStyle = "footerDown_Style_Text_Conteiner";
-  const castomTextStyle = "footerDown_Style_Text";
 
   const CopyrightTextArray = ["© id-themes. All Rights Reserved"];
 
+  const copyrightTextStyleObj = {
+    castomTextConteinerStyle: "footerDown_Style_Text_Conteiner",
+    castomTextStyle: "footerDown_Style_Text",
+  };
+  
   return (
     <CastomText
       textArray={CopyrightTextArray}
-      castomTextConteinerStyle={castomTextConteinerStyle}
-      castomTextStyle={castomTextStyle}
+      customClass={copyrightTextStyleObj}
     />
   );
 }
